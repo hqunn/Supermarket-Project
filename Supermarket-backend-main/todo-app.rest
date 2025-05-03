@@ -1,0 +1,26 @@
+### Get /
+GET http://localhost:5000
+
+###
+POST  http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "username": "huy.quoc1205@gmail.com",
+  "password": "12052005"
+}
+###
+POST  http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "username": "huy.dinh12052005",
+  "password": "123456"
+}
+
+###
+GET http://localhost:5000/todos/profile/customer/1
+###
+GET http://localhost:5000/todos/categories
+###
+GET http://localhost:5000/todos/products/1

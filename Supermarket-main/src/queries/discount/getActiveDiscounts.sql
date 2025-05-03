@@ -1,0 +1,4 @@
+SELECT *
+FROM Discount
+WHERE StartDate <= CURRENT_DATE
+    AND EndDate >= CURRENT_DATE;

@@ -1,0 +1,34 @@
+-- Xóa dữ liệu từ bảng liên kết trước để tránh lỗi ràng buộc khóa ngoại
+DELETE FROM ApplyDiscount;
+DELETE FROM OnlineBuying;
+DELETE FROM OfflineBuying;
+DELETE FROM Invoice;
+DELETE FROM OrderDetails;
+DELETE FROM OrderTable;
+DELETE FROM PaymentMethod;
+DELETE FROM Discount;
+DELETE FROM WarrantyCard;
+DELETE FROM Product;
+DELETE FROM Category;
+DELETE FROM Warehouse;
+DELETE FROM MemberAccount;
+DELETE FROM Consulting;
+DELETE FROM Customer;
+DELETE FROM Consultant;
+DELETE FROM Cashier;
+DELETE FROM Checkout;
+DELETE FROM Employee;
+DELETE FROM Delivery;
+-- Reset sequence về 1
+ALTER SEQUENCE employee_employeeid_seq RESTART WITH 1;
+ALTER SEQUENCE checkout_counterid_seq RESTART WITH 1;
+ALTER SEQUENCE customer_customerid_seq RESTART WITH 1;
+ALTER SEQUENCE memberaccount_accountid_seq RESTART WITH 1;
+ALTER SEQUENCE warehouse_warehouseid_seq RESTART WITH 1;
+ALTER SEQUENCE category_categoryid_seq RESTART WITH 1;
+ALTER SEQUENCE product_productid_seq RESTART WITH 1;
+ALTER SEQUENCE delivery_deliveryid_seq RESTART WITH 1;
+ALTER SEQUENCE ordertable_orderid_seq RESTART WITH 1;
+ALTER SEQUENCE paymentmethod_paymentid_seq RESTART WITH 1;
+ALTER SEQUENCE invoice_invoiceid_seq RESTART WITH 1;
+ALTER SEQUENCE discount_discountid_seq RESTART WITH 1;
